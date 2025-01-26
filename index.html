@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compatibilidade com navegadores antigos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Marketing Digital | Serviços de Publicidade e SEO | Nexovatech</title>
+
+     <!-- Meta descrição (aparece nos resultados do Google, cerca de 150-160 caracteres) -->
+     <meta name="description" content="Oferecemos soluções completas de marketing digital, incluindo SEO, gestão de redes sociais, anúncios pagos e criação de conteúdo. Entre em contato e transforme sua marca.">
+     <meta name="keywords" content="marketing digital, SEO, publicidade online, anúncios pagos, gestão de redes sociais, criação de conteúdo">
+     <meta name="author" content="Matheus Farias">
+
+     <!-- Tags de Open Graph para redes sociais -->
+     <meta property="og:title" content="Agência de Marketing Digital - Transforme sua Marca">
+     <meta property="og:description" content="Oferecemos soluções de marketing digital, SEO, e gestão de redes sociais para aumentar os resultados da sua empresa.">
+     <meta property="og:image" content="https://nexovatech.com.br/img/nexovatech-logo.png">
+     <meta property="og:url" content="https://nexovatech.com.br">
+     <meta property="og:type" content="website">
+
+     <!-- Robots (controle de indexação) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL para evitar conteúdo duplicado -->
+    <link rel="canonical" href="https://www.nexovatech.com.br">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .solicite_orcamento {
+            background: #1d4ed8;
+            color: #fff;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            font-weight: 700;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 0px;
+            gap: 16px;
+    }
+
+.whatsapp-float-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    font-family: sans-serif;
+}
+
+.whatsapp-text {
+    background-color: #25d366;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float-container:hover .whatsapp-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.whatsapp-float {
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #20ba57;
+    transform: scale(1.1);
+}
+
+.whatsapp-float i {
+    margin-top: 2px;
+}
+
+/* Animação de pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+}
+
+.whatsapp-float {
+    animation: pulse 2s infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .whatsapp-text {
+        display: none;
+    }
+    
+    .whatsapp-float-container:hover .whatsapp-text {
+        display: block;
+    }
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/gestaodetrafego.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 180px 0 100px;
+    position: relative;
+    min-height: 600px;
+}
+
+.hero-section h1,
+.hero-section p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajuste para garantir que o botão fique legível */
+.hero-section .btn {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WEGGKBL31"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1WEGGKBL31');
+</script>
+
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-600">Nexova<span class="text-gray-800">tech</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" title="Página Inicial de Marketing Digital" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#servicos" title="Serviços de Marketing Digital" class="text-gray-700 hover:text-blue-600 transition">Serviços</a>
+                    <a href="#sobre" title="Sobre a Agência de Marketing Digital Nexovatech" class="text-gray-700 hover:text-blue-600 transition">Sobre</a>
+                    <a href="#contato" title="Contate servicos em Marketing Digital" class="text-gray-700 hover:text-blue-600 transition">Contato</a>
+                
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                Transforme sua Presença Digital com Marketing Estratégico
+            </h1>
+            <p class="text-xl text-white mb-8">
+                Soluções inovadoras em marketing digital para impulsionar seu negócio
+            </p>
+            <a href="#contato" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition btn">
+                Agendar Consulta Gratuita
+            </a>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-search text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">SEO</h3>
+                    <p class="text-gray-600">Otimização para mecanismos de busca e maior visibilidade online.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-chart-line text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Gestão de Tráfego</h3>
+                    <p class="text-gray-600">Aperfeiçoamento de campanhas com Meta Business e Google Ads.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-bullhorn text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Marketing de Conteúdo</h3>
+                    <p class="text-gray-600">Conteúdo relevante e estratégico para sua audiência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-6 text-blue-600">SEO - Otimização para Mecanismos de Busca</h3>
+                
+                <h4 class="text-xl font-semibold mb-4">Estratégias Abrangentes de SEO</h4>
+                
+                <p class="mb-4">Nosso serviço de SEO é projetado para elevar sua presença online e aumentar a visibilidade do seu negócio nos principais mecanismos de busca.</p>
+                
+                <h4 class="text-lg font-semibold mt-4 mb-4">Principais Benefícios:</h4>
+                
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li><strong>Análise Completa de Palavras-Chave</strong>: Identificamos as palavras-chave mais relevantes para seu negócio, garantindo que seu conteúdo alcance o público-alvo.</li>
+                    <li><strong>Otimização Técnica</strong>: Melhoramos a estrutura do seu site para garantir performance máxima nos mecanismos de busca.</li>
+                    <li><strong>Auditoria de Conteúdo</strong>: Revisamos e aprimoramos o conteúdo existente para maior relevância e ranking.</li>
+                    <li><strong>Meta tags</strong>: Criamos meta tags otimizadas e de qualidade para aumentar a autoridade do seu domínio.</li>
+                </ul>
+                
+                <a href="#contato" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full mt-4 hover:bg-blue-700 transition">Saiba Mais</a>
+            </div>
+    
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-6 text-blue-600">Gestão de Tráfego</h3>
+                
+                <h4 class="text-xl font-semibold mb-4">Maximização de Resultados em Publicidade Digital</h4>
+                
+                <p class="mb-4">Somos especialistas em gestão de tráfego. Transformamos seus clicks em conversões, utilizando as mais avançadas estratégias do Meta Business e Google Ads.</p>
+                
+                <h4 class="text-lg font-semibold mt-4 mb-4">Serviços Especializados:</h4>
+                
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li><strong>Campanhas Personalizadas</strong>: Criamos estratégias de anúncios exclusivas para seu negócio.</li>
+                    <li><strong>Segmentação Precisa</strong>: Alcançamos o público exato que mais se interessa pelo seu produto ou serviço.</li>
+                    <li><strong>Análise de Performance</strong>: Monitoramento constante e otimização em tempo real das campanhas.</li>
+                    <li><strong>Relatórios Detalhados</strong>: Transparência total sobre o desempenho dos seus investimentos em publicidade.</li>
+                </ul>
+                
+                <a href="#contato" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full mt-4 hover:bg-blue-700 transition">Solicitar Análise</a>
+            </div>
+    
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-6 text-blue-600">Marketing de Conteúdo</h3>
+                
+                <h4 class="text-xl font-semibold mb-4">Conteúdo que Engaja e Converte</h4>
+                
+                <p class="mb-4">Desenvolvemos estratégias de marketing de conteúdo que não apenas atraem, mas transformam leads em clientes fiéis.</p>
+                
+                <h4 class="text-lg font-semibold mt-4 mb-4">Nossos Diferenciais:</h4>
+                
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li><strong>Copyright</strong>: Criamos narrativas que conectam sua marca com o público.</li>
+                    <li><strong>Conteúdo Multiplataforma</strong>: Produção de conteúdo adaptado para blogs, redes sociais, e-mail marketing utilizando inteligência artificial.</li>
+                    <li><strong>Criação de Site</strong>: Criamos um site para anunciar seu produto, serviço ou marca utilizando tecnologias legadas como html, css e javascript.</li>
+                </ul>
+                
+                <a href="#contato" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full mt-4 hover:bg-blue-700 transition">Explorar Estratégias</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Somos Especialistas em Gestão de Tráfego</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div class="order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-6">Por que somos referência em Gestão de Tráfego?</h3>
+                    <p class="text-gray-600 mb-6">
+                        Com mais de 5 anos de experiência em campanhas publicitárias online, Desenvolvemos expertise única em criar, otimizar e escalar campanhas de anúncios que realmente convertem.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span class="text-gray-600">Campanhas certificadas pelo Meta Ads e Google Ads</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span class="text-gray-600">Metodologia própria de otimização de campanhas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span class="text-gray-600">ROI médio de 300% para nossos clientes</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="img/gestaodetrafego2.jpg" alt="Gestão de Tráfego Profissional" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+    
+            <div class="bg-gray-50 rounded-2xl p-8 lg:p-12">
+                <h3 class="text-2xl font-bold text-center text-blue-600 mb-12">O que é Gestão de Tráfego?</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-bullseye text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-4">Segmentação Precisa</h4>
+                        <p class="text-gray-600">
+                            Identificamos e alcançamos seu público-alvo ideal através de análise demográfica, comportamental e de interesses.
+                        </p>
+                    </div>
+    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-chart-line text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-4">Otimização Contínua</h4>
+                        <p class="text-gray-600">
+                            Monitoramento em tempo real e ajustes estratégicos para maximizar o retorno sobre o investimento.
+                        </p>
+                    </div>
+    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-analytics text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-4">Análise de Dados</h4>
+                        <p class="text-gray-600">
+                            Tomada de decisão baseada em dados com relatórios detalhados e insights acionáveis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8">Pronto para transformar suas campanhas?</h3>
+                <a href="#contato" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition">
+                    Fale com um Especialista
+                </a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Oferta Especial Section -->
+     <section id="oferta-especial" class="section py-20 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">Oferta Especial para Novos Clientes</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">Primeira Contratação</h3>
+                    
+                    <p>Ao contratar nossos serviços pela primeira vez, você recebe:</p>
+                    
+                    <ul class="mt-4 mb-6 space-y-2">
+                        <li><strong>50% de Desconto</strong> em qualquer pacote de serviços</li>
+                        <li><strong>Consultoria Estratégica Gratuita</strong> com dicas e sugestões</li>
+                        <li><strong>Auditoria Inicial Completa</strong> sem custo adicional</li>
+                        <li><strong>Relatório Personalizado</strong> de Estratégias Digitais</li>
+                    </ul>
+                    
+                    <a href="#contato" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full mt-6 hover:bg-blue-700 transition font-bold">
+                        Aproveitar Oferta
+                    </a>
+                </div>
+                
+                <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-8 rounded-lg shadow-lg flex flex-col justify-center items-center">
+                    <h3 class="text-2xl font-bold mb-6">Tempo Limitado</h3>
+                    
+                    <h4 class="text-xl mb-4 text-center">Oferta Válida por Tempo Limitado!</h4>
+                    
+                    <p class="text-center mb-4">Não perca esta oportunidade única de impulsionar seu negócio com as melhores estratégias de marketing digital.</p>
+                    
+                    <p class="font-bold mb-4">Vagas Limitadas: Garanta Já Sua Vaga</p>
+                    
+                    <a href="#contato" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-full mt-6 hover:bg-gray-100 transition font-bold">
+                        Agendar Consulta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Sobre -->
+     <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="img/nexovatech-logo.png" alt="Sobre nós" class="rounded-lg shadow-lg"/>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre a Nexovatech</h2>
+                    <p class="text-gray-600 mb-4">
+                        A nexovatech foi criada em novembro de 2024 por Matheus Farias, um microempreendedor individual da área do marketing e tecnologia.  </p>
+                        <p class="text-gray-600 mb-4">
+                            Formado em Sistemas de informação pela Uninove em 2024, Matheus da nexovatech é um desenvolvedor e analista de marketing desde 2018. E está preparado para solucionar seus problemas nessa área.     
+                  
+                        </p>
+                    
+                    <p class="text-gray-600 mb-4">
+                        "Trabalho com estratégias de marketing digital avançadas e com as mais recentes tecnologias e estratégias para garantir resultados excepcionais."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="solicite_orcamento">
+            <h1>SOLICITE SEU ORÇAMENTO</h1>
+        </div>      
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Entre em Contato</h2>
+            <form class="bg-white p-8 rounded-lg shadow-lg" action="https://formspree.io/f/xgvezbdy" method="POST">
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2" for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2" for="mensagem">Mensagem</label>
+                    <textarea name="message" id="mensagem" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                    Enviar Formulário
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <div class="whatsapp-float-container">
+        <div class="whatsapp-text">Fale conosco no WhatsApp</div>
+        <a href="https://wa.me/5511932551688?text=Olá! Gostaria de saber mais sobre os serviços da Nexovatech." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="whatsapp-float" 
+           title="Fale conosco pelo WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nexovatech</h3>
+                    <p class="text-gray-400">Transformando negócios através do marketing digital</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-white transition">Serviços</a></li>
+                        <li><a href="#sobre" class="text-gray-400 hover:text-white transition">Sobre</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i><a href="tel:+5511932551688">+55(11)93255-1688</a></li>
+                        <li><i class="fas fa-envelope mr-2"></i> contato@nexovatech.com.br</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+<div>
+                <h4 class="text-lg font-bold mb-4 text-white">Documentos Legais</h4>
+                <ul>
+                    <li>
+                        <a href="https://nexovatech.com.br/termos-de-uso-e-privacidade.html" class="text-gray-400 hover:text-white transition">
+                            Termos de Uso
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://nexovatech.com.br/termos-de-uso-e-privacidade.html" class="text-gray-400 hover:text-white transition">
+                            Política de Privacidade
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Nexovatech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
